@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">  
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./home.html"> Volver al Inicio</a>
+        </nav>
+    </header>
+    <h1>Logearme</h1>
+    <form class="form-form">
+        <input type="email" placeholder="Ingresa tu Email" id="inputEmail">
+        <input type="password" placeholder="Ingresa tu contraseña" id="inputPass">
+        <button type="button" id="Boton">Logeame</button>
+        <!-- <a href="./products.html">ir a Productos</a> -->
+    </form>
+    <div id="botoncito"></div>
+    <script src="./Js/login.js"></script>
+    <script>
+        const token = localStorage.getItem('token')
+    
+        if(token) {
+          window.location.href= '/products.html'
+        }
+    </script>
+</body>
+</html>
+

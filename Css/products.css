@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-image: url("https://marketplace.canva.com/EAEK4dC2olw/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-y-naranja-fondo-virtual-para-zoom-c3PYha1JI9M.jpg");
+    background-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+}
+
+.navbar{
+    height: 6.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    
+}
+
+h1{
+    font-size:5rem;
+    padding-top: 1rem;
+    color: rgb(116, 15, 35);
+    font-family: 'Lato', sans-serif;
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 0px 3px rgba(32,32,32,0.6);
+}
+
+.sectionDivContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#divcontainer {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 64% 64% ;
+    padding: 0px;
+    margin: 0px;
+}
+
+.divdejs{
+    background-color: whitesmoke;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+    animation-name: animaciondiv;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes animaciondiv {
+    0% {border: 3px solid red;}
+    12.5% {border: 3px solid orange;}
+    25% {border: 3px solid yellow;}
+    37.5% {border: 3px solid lime;}
+    50% {border: 3px solid green;}
+    62.5% {border: 3px solid cyan;}
+    75% {border: 3px solid rgb(77, 77, 206);}
+    87.5% {border: 3px solid magenta;}
+    100% {border: 3px solid red;}
+}
+
+.imgdejs{
+    width: 100%;
+}
+
+#subirArriba{
+    width: 5rem;
+    height: 5rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    cursor: pointer;
+    animation-name: animacionsubir;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes animacionsubir {
+    0% {background: red;}
+    12.5% {background:  orange;}
+    25% {background:  yellow;}
+    37.5% {background:  rgb(18, 253, 18);}
+    50% {background:  rgb(1, 90, 1);}
+    62.5% {background:  cyan;}
+    75% {background:  rgb(77, 77, 206);}
+    87.5% {background: magenta;}
+    100% {background:  red;}
+}
+
+.sectionSubir{
+    position: sticky;
+    bottom: 1rem;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">  
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido a MarketruchiPlace</h1>
+    <p id="ppp"></p>
+    <a id="AAA"></a>
+    
+ <script>
+
+    const a = document.getElementById('AAA');
+    const token = localStorage.getItem('token');
+    const ppp = document.getElementById('ppp')
+    let text = ""
+    let url = ""
+    let textP = ""
+    if(token) {
+        text = 'Ir a productos'
+        url = './products.html'
+        textP= '¡Ya estas logeado da click en ir a productos y disfruta!'
+    }else{
+        text = 'Loguearme'
+        url = './login.html'
+        textP= '¡Da click en loguearme y logueate para ver nuestros productos!'
+    }
+    a.innerText = text; 
+    a.href = url; 
+    ppp.innerText = textP
+
+ </script>
+</body>
+</html>

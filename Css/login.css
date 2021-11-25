@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body {
+    width: 99.6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-image: url("https://marketplace.canva.com/EAEK4dC2olw/1/0/1600w/canva-arco%C3%ADris-gradiente-rosa-y-naranja-fondo-virtual-para-zoom-c3PYha1JI9M.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+}
+
+.navbar{
+    height: 6.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+}
+
+h1{
+    font-size: 5rem;
+    padding-bottom: 2.3rem;
+    color: rgb(116, 15, 35);
+    font-family: 'Lato', sans-serif;
+    text-shadow: 5px 0px 3px rgba(32,32,32,0.6);
+}
+
+.botonQueAprece {
+    margin-top: 2rem;
+    width: 15rem;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  
+}
+
+.form-form input {
+    width: 30rem;
+    font-family: 'Lato', sans-serif;
+    height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 7px;
+}
+
+.form-form button {
+    width: 15rem;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+}
+
+.form-form button:hover{
+    background-color: black;
+    color: white;
+}
+
+.botonQueAprece:hover {
+    background-color: black;
+    color: white;
+}
